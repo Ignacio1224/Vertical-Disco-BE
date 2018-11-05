@@ -9,8 +9,11 @@
     padding: 0;
 }
 
-
+html {
+    height: 100%;
+}
 body {
+    height: 100%;
     background-color: rgba(200, 200, 200);
 }
 
@@ -78,4 +81,51 @@ body {
 }
 
 
-/* Dashboard */
+/* Generic Second Wireframe */
+nav {
+    height: 93.5vh ;
+    background-color: rgba(120, 120, 120);
+    width: 12%;
+}
+
+nav ul {
+    list-style: none;
+    background-color: rgba(120, 120, 120);
+}
+
+nav ul li {
+    width: 100%;
+    margin: 0 0 2em 2em;
+}
+
+nav ul li:last-child {
+    margin-bottom: 0;
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: rgb(254, 254, 254);
+}
+
+header {
+    background-color: rgb(0, 0, 0);
+    padding: 0.4em;
+}
+
+header h1 {
+    color: rgb(254, 254, 254);
+    display: inline;
+    margin-right: 82%;
+}
+
+header a {
+    display: inline;
+    font-size: 2em;
+    color: rgb(254, 254, 254);
+    margin-right: 0.6em;
+}
+
+header a:last-child {
+    margin-right: 0;
+}
