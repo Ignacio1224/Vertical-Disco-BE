@@ -20,11 +20,10 @@ body {
     background-color: rgb(254, 254, 254);
     border: 1px solid #ccc;
     width: 24vw;
-    height: 46vh;
     margin: 10vh auto;
     padding: 12px;
     box-sizing: border-box;
-    position: relative;
+    overflow: hidden;
 }
 
 #logInForm h2 {
@@ -64,16 +63,17 @@ body {
     outline: 5px solid rgb(66, 112, 248);
 }
 
-#logInForm a {
-    text-decoration: none;
+#logInForm input[type='submit'] {
     color: rgb(254, 254, 254);
     background-color: rgb(66, 112, 248);
+    border-color: rgb(66, 112, 248);
     border-radius: 6px;
     font: 1.2em Verdana, Geneva, Tahoma, sans-serif;
     padding: 6px;
-    bottom: 0.4em;
-    right: 0.6em;
-    position: absolute;
+    display: block;
+    margin-top: 0.8em;
+    width: 5em;
+    float: right;
     box-sizing: border-box;
 }
 
