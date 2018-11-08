@@ -15,6 +15,7 @@ html {
 body {
     height: 100%;
     background-color: rgba(200, 200, 200);
+    display: block;
 }
 
 
@@ -82,10 +83,48 @@ body {
 
 
 /* Generic Second Wireframe */
+/* HEADER */
+header {
+    background-color: rgb(0, 0, 0);
+    padding: 0.4em;
+    overflow: hidden;
+}
+
+/* Title */
+header h1 {
+    width: 94%;
+    float: left;
+    color: rgb(254, 254, 254);
+}
+
+/* Links */
+header span {
+    width: 6%;
+    float: left;
+}
+
+header span a {
+    text-decoration: none;
+    font-size: 2em;
+    color: rgb(254, 254, 254);
+}
+
+header span a:last-child {
+    margin-left: 12%;
+}
+
+/* Generic organizer */
+.agrppal {
+    overflow: hidden;
+}
+
+
+/* SIDEBAR NAV */
 nav {
-    height: 93.5vh ;
+    height: 95vh ;
     background-color: rgb(120, 120, 120);
     width: 12%;
+    float: left;
 }
 
 nav ul {
@@ -98,37 +137,139 @@ nav ul li {
     width: 100%;
 }
 
-nav ul li:last-child {
-    margin-bottom: 0;
-}
-
 nav ul li a {
     text-decoration: none;
-    padding: 2em 0 2em 2em;
+    padding: 1em 0 1em 2em;
     display: block;
-    border-bottom: 1px solid rgb(2, 2, 2);
     box-sizing: border-box;
     color: rgb(254, 254, 254);
+    transition: 1s ease;
 }
 
-header {
-    background-color: rgb(0, 0, 0);
+nav ul li a:hover {
+    color: rgb(124, 2, 248);
+    background-color: rgb(140, 140, 140);
+    transition: 0.4s ease;
+}
+
+
+/* CONTENT */
+.content {
+    float: left;
+    width: 80%;
+}
+
+/* Path */
+.content p {
+    margin: 2em auto auto 3em;
+}
+
+/* Title */
+.content h1 {
+    margin: 1em auto auto 1.5em;
+}
+
+.content div {
+    margin: 2em auto auto 3em;
+    overflow: hidden;
+}
+
+/* Button Add */
+.content div a {
+    float: left;
+    text-decoration: none;
+    background-color: rgb(66, 112, 248);
+    color: rgb(254, 254, 254);
+    padding: 0.6em 2em;
+    border-radius: 4px;
+}
+
+/* Search */
+.content div input {
+    float: left;
+    margin-left: 84em;
+    border: 1px solid rgb(2, 2, 2);
+    line-height: 2.4em;
+    padding-left: 0.4em;
+}
+
+.content div input:focus {
+    outline: 2px solid rgb(66, 112, 248);
+}
+
+.content div span {
+    float: left;
+    padding: 0 0.2em;
+    border-top: 1px solid rgb(2, 2, 2);
+    border-right: 1px solid rgb(2, 2, 2);
+    border-bottom: 1px solid rgb(2, 2, 2);
+    line-height: 2em;
+}
+
+/* Data */
+.content section {
+    border-top: 1px solid rgba(2, 2, 2, 0.4);
+    border-left: 1px solid rgba(2, 2, 2, 0.4);
+    border-right: 1px solid rgba(2, 2, 2, 0.4);
+
+    margin-top: 3em;
+    margin-left: 3em;
+    padding: 1em;;
+}
+
+/* Table */
+.content section table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.content section table thead {
+    border-bottom: 1px solid rgb(2, 2, 2);
+}
+
+.content section table thead tr td {
+    text-align: justify;
+    font-weight: bold;
+}
+
+.content section table tbody tr td {
+    text-align: justify;
+    padding: 1em 0;
+    transition: 0.6s ease;
+}
+
+.content section table tbody tr td a {
+    text-decoration: none;
+    color: rgb(66, 112, 248);
+    font-size: 1.2em;
+    margin-left: 1em;
     padding: 0.4em;
 }
 
-header h1 {
-    color: rgb(254, 254, 254);
-    display: inline;
-    margin-right: 84%;
+.content section table tbody tr td a:first-child {
+    margin: 0;
 }
 
-header a {
-    display: inline;
-    font-size: 2em;
-    color: rgb(254, 254, 254);
-    margin-right: 0.6em;
+.content section table tbody tr td a:hover {
+    color: rgb(124, 2, 248);
 }
 
-header a:last-child {
-    margin-right: 0;
+
+/* PAGES */
+#pages {
+    text-align: right;
+}
+
+#pages a {
+    text-decoration: none;
+    color: rgb(66, 112, 248);
+    font-size: 1.2em;
+}
+
+#pages a:first-child {
+    font-weight: bold;
+}
+
+#pages a:hover {
+    color: rgb(124, 2, 248);
 }
