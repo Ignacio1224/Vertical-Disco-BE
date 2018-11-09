@@ -160,7 +160,7 @@ nav ul li a:hover {
 }
 
 /* Path */
-.content p {
+.content > p {
     margin: 2em auto auto 3em;
 }
 
@@ -174,8 +174,10 @@ nav ul li a:hover {
     overflow: hidden;
 }
 
+
+/* LISTADO PAGE */
 /* Button Add */
-.content div a {
+.content > div a {
     float: left;
     text-decoration: none;
     background-color: rgb(66, 112, 248);
@@ -185,7 +187,7 @@ nav ul li a:hover {
 }
 
 /* Search */
-.content div input {
+.content > div input {
     float: left;
     margin-left: 84em;
     border: 1px solid rgb(2, 2, 2);
@@ -193,11 +195,11 @@ nav ul li a:hover {
     padding-left: 0.4em;
 }
 
-.content div input:focus {
+.content > div input:focus {
     outline: 2px solid rgb(66, 112, 248);
 }
 
-.content div span {
+.content > div span {
     float: left;
     padding: 0 0.2em;
     border-top: 1px solid rgb(2, 2, 2);
@@ -207,7 +209,7 @@ nav ul li a:hover {
 }
 
 /* Data */
-.content section {
+.content > section {
     border-top: 1px solid rgba(2, 2, 2, 0.4);
     border-left: 1px solid rgba(2, 2, 2, 0.4);
     border-right: 1px solid rgba(2, 2, 2, 0.4);
@@ -218,27 +220,27 @@ nav ul li a:hover {
 }
 
 /* Table */
-.content section table {
+.content > section table {
     width: 100%;
     border-collapse: collapse;
 }
 
-.content section table thead {
+.content > section table thead {
     border-bottom: 1px solid rgb(2, 2, 2);
 }
 
-.content section table thead tr td {
+.content > section table thead tr td {
     text-align: justify;
     font-weight: bold;
 }
 
-.content section table tbody tr td {
+.content > section table tbody tr td {
     text-align: justify;
     padding: 1em 0;
     transition: 0.6s ease;
 }
 
-.content section table tbody tr td a {
+.content > section table tbody tr td a {
     text-decoration: none;
     color: rgb(66, 112, 248);
     font-size: 1.2em;
@@ -246,11 +248,11 @@ nav ul li a:hover {
     padding: 0.4em;
 }
 
-.content section table tbody tr td a:first-child {
+.content > section table tbody tr td a:first-child {
     margin: 0;
 }
 
-.content section table tbody tr td a:hover {
+.content > section table tbody tr td a:hover {
     color: rgb(124, 2, 248);
 }
 
@@ -272,4 +274,59 @@ nav ul li a:hover {
 
 #pages a:hover {
     color: rgb(124, 2, 248);
+}
+
+
+/* DASHBOARD PAGE */
+/* Mas buscados + Ultimos subidos */
+#cent {
+    float: left;
+}
+
+/* Mas buscados */
+#mas-buscados {
+    padding: 1em;
+    border: 1px solid rgb(120, 120, 120);
+}
+
+#mas-buscados figure {
+    float: left;
+}
+
+#mas-buscados figcaption img {
+    float: left;
+}
+
+#mas-buscados figure figcaption {
+    float: left;
+}
+
+
+/* Ultimos subidos */
+#ultimos-subidos {
+    float: left;
+}
+
+#ultimos-subidos figure img {
+    float: left;
+}
+
+#ultimos-subidos figure figcaption {
+    float: left;
+}
+
+#ultimos-subidos figure figcaption p {
+    text-align: right;
+}
+
+
+/* Registro de usuarios */
+#registro-usuarios {
+    float: left;
+}
+
+
+/* Stock */
+.agrppal aside {
+    float: left;
 }
