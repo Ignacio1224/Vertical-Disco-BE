@@ -98,6 +98,11 @@ header h1 {
 }
 
 /* Links */
+header {
+    position: fixed;
+    width: 100%;
+}
+
 header span {
     width: 6%;
     float: left;
@@ -121,10 +126,12 @@ header span a:last-child {
 
 /* SIDEBAR NAV */
 nav {
-    height: 95vh ;
+    margin-top: 3.1em;
+    height: 95vh;
     background-color: rgb(120, 120, 120);
     width: 12%;
     float: left;
+    position: fixed;
 }
 
 nav ul {
@@ -157,6 +164,7 @@ nav ul li a:hover {
 .content {
     float: left;
     width: 80%;
+    margin-left: 12%;
 }
 
 /* Path */
@@ -189,7 +197,7 @@ nav ul li a:hover {
 /* Search */
 .content > div input {
     float: left;
-    margin-left: 84em;
+    margin-left: 74%;
     border: 1px solid rgb(2, 2, 2);
     line-height: 2.4em;
     padding-left: 0.4em;
@@ -229,9 +237,8 @@ nav ul li a:hover {
     border-bottom: 1px solid rgb(2, 2, 2);
 }
 
-.content > section table thead tr td {
+.content > section table thead tr th {
     text-align: justify;
-    font-weight: bold;
 }
 
 .content > section table tbody tr td {
@@ -328,5 +335,16 @@ nav ul li a:hover {
 
 /* Stock */
 .agrppal aside {
+    float: left;
+}
+
+
+/* Page Registro */
+.content form {
+    background-color: rgb(254, 254, 254);
+    margin: 1em auto auto 3em;
+}
+
+.content > form > div {
     float: left;
 }

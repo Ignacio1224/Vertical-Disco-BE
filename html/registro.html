@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Link Font Awesome -->
+    <link rel="stylesheet" href="./../css/font-awesome.css">
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="./../css/style.css">
+
+    <!-- FAV ICON -->
+    <link rel="icon" type="image/png" href="../images/Disco.png">
+
+    <title>Dashboard | Vertical Disco</title>
+</head>
+
+<body>
+
+    <!-- HEADRER -->
+    <header>
+        <h1>Vertical Disco</h1>
+        <span>
+            <a href="#" class="fa fa-user" title="Mi Cuenta"></a>
+            <a href="#" class="fas fa-sign-out-alt" title="Salir"></a>
+        </span>
+    </header>
+
+    <div class="agrppal">
+        <!-- SIDE BAR -->
+        <nav>
+            <ul>
+                <li><a href="./dashboard.html">Inicio</a></li>
+                <li><a href="./listado.html">Productos</a></li>
+                <li><a href="#">Usuarios Registrados</a></li>
+                <li><a href="#">Analítica</a></li>
+                <li><a href="#">Mailings</a></li>
+                <li><a href="#">Multiedia</a></li>
+            </ul>
+        </nav>
+
+        <!-- CONTENT -->
+        <div class="content">
+            <p>Productos -> Agregar</p>
+
+            <h1>Agregar</h1>
+
+            <!-- Form Add -->
+            <form action="#" method="post" class="agrppal">
+                <div>
+                    <p>(*) Campos Obligatorios</p>
+
+                    <div>
+                        <label for="txtName">Nombre *</label>
+                        <input type="text" name="txtName" id="txtName">
+                    </div>
+
+                    <div>
+                        <label for="txtDesctription">Desctripcion *</label>
+                        <textarea name="txtDescription" id="txtdescription" cols="48" rows="12"></textarea>
+                    </div>
+                </div>
+
+                <div>
+                    <div>
+                        <label for="rdbttnEstado">Stock *</label>
+                        <input type="radio" name="rdbttnEstado" id="rdbttnEnable"> Habilitado
+                        <input type="radio" name="rdbttnEstado" id="rdbttnDisable"> Deshabilitado
+                        <input type="radio" name="rdbttnEstado" id="rdbttnWating"> En Espera
+                    </div>
+
+                    <div>
+                        <label for="fileImg">Imagen</label>
+                        <input type="file" name="fileImg" id="fileImg">
+                    </div>
+
+                    <div>
+                        <label for="cmbGender">Genero</label>
+                        <select name="cmbGender" id="cmbGender">
+                            <option value="rap">Rap</option>
+                            <option value="pop">Pop</option>
+                            <option value="rock">Rock</option>
+                            <option value="trap">Trap</option>
+                            <option value="blues">Blues</option>
+                            <option value="jazz">Jazz</option>
+                            <option value="rocknroll">Rock'n Roll</option>
+                            <option value="cumbia">Cumbia</option>
+                            <option value="plena">Plena</option>
+                            <option value="reggaeton">Reggaeton</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="chbxPublish">Publicar *</label>
+                        <input type="checkbox" name="chbxPublish" id="chbxPublish"> Publicar
+                    </div>
+
+                    <div>
+                        <a href="#">Limpiar</a>
+                        <a href="#">Agregar</a>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
