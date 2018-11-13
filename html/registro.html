@@ -34,7 +34,7 @@
         <nav>
             <ul>
                 <li><a href="./dashboard.html">Inicio</a></li>
-                <li><a href="./listado.html">Productos</a></li>
+                <li class="navactive"><a href="./listado.html">Productos</a></li>
                 <li><a href="#">Usuarios Registrados</a></li>
                 <li><a href="#">Analítica</a></li>
                 <li><a href="#">Mailings</a></li>
@@ -44,7 +44,7 @@
 
         <!-- CONTENT -->
         <div class="content">
-            <p>Productos -> Agregar</p>
+            <p>Productos &#8594; Agregar</p>
 
             <h1>Agregar</h1>
 
@@ -55,21 +55,21 @@
 
                     <div>
                         <label for="txtName">Nombre *</label>
-                        <input type="text" name="txtName" id="txtName">
+                        <input type="text" name="txtName" id="txtName" required>
                     </div>
 
                     <div>
                         <label for="txtDesctription">Desctripcion *</label>
-                        <textarea name="txtDescription" id="txtdescription" cols="48" rows="12"></textarea>
+                        <textarea name="txtDescription" id="txtdescription" cols="48" rows="8" required></textarea>
                     </div>
                 </div>
 
                 <div>
                     <div>
                         <label for="rdbttnEstado">Stock *</label>
-                        <input type="radio" name="rdbttnEstado" id="rdbttnEnable"> Habilitado
-                        <input type="radio" name="rdbttnEstado" id="rdbttnDisable"> Deshabilitado
-                        <input type="radio" name="rdbttnEstado" id="rdbttnWating"> En Espera
+                        <input type="radio" name="rdbttnEstado" id="rdbttnEnable" required> Habilitado
+                        <input type="radio" name="rdbttnEstado" id="rdbttnDisable" required> Deshabilitado
+                        <input type="radio" name="rdbttnEstado" id="rdbttnWating" required> En Espera
                     </div>
 
                     <div>
@@ -94,19 +94,23 @@
                     </div>
 
                     <div>
-                        <label for="chbxPublish">Publicar *</label>
-                        <input type="checkbox" name="chbxPublish" id="chbxPublish"> Publicar
+                        <input type="checkbox" name="chbxPublish" id="chbxPublish" required> Publicar *
                     </div>
 
                     <div>
                         <a href="#">Limpiar</a>
-                        <a href="#">Agregar</a>
+                        <input type="submit" value="Ingresar">
                     </div>
                 </div>
             </form>
-
         </div>
     </div>
+
+    <div id="vaciofnal"></div>
+
+    <footer>
+        <p>Creado por: Ignacio Cabrera</p>
+    </footer>
 
 </body>
 
