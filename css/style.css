@@ -19,6 +19,10 @@ body {
     display: block;
 }
 
+img {
+    width: 6em;
+    height: 6em;
+}
 
 /* LogIn Page */
 #logInForm {
@@ -291,57 +295,107 @@ nav ul li a:hover {
 /* DASHBOARD PAGE */
 /* Mas buscados + Ultimos subidos */
 #cent {
+    width: 74%;
+    float: left;
+    margin: 0 1% auto 5%;
+}
+
+.content > .agrppal > aside {
+    width: 20%;
     float: left;
 }
 
-/* Mas buscados */
 #mas-buscados {
-    padding: 1em;
-    border: 1px solid rgb(120, 120, 120);
+    background-color: rgb(254, 254, 254);
+    padding: 0.6em;
+    box-sizing: border-box;
 }
 
-#mas-buscados figure {
+#mas-buscados > figure {
+    width: 32%;
+    float: left;
+    margin: 1em 2% auto auto;
+}
+
+#mas-buscados > figure:last-child {
+    margin-right: 0;
+}
+
+#mas-buscados > figure > img {
     float: left;
 }
 
-#mas-buscados figcaption img {
+#mas-buscados > figure > figcaption {
+    width: 30%;
     float: left;
 }
 
-#mas-buscados figure figcaption {
-    float: left;
+#cent > div:nth-of-type(1) {
+    width: 100%;
+    margin: 2em 3em auto auto;
 }
 
-
-/* Ultimos subidos */
 #ultimos-subidos {
+    width: 60%;
+    float: left;
+    background-color: rgb(254, 254, 254);
+    padding: 0.6em;
+    box-sizing: border-box;
+}
+
+#ultimos-subidos > figure {
+    margin-top: 1em;
+}
+
+#ultimos-subidos > figure > img {
     float: left;
 }
 
-#ultimos-subidos figure img {
+#ultimos-subidos > figure figcaption {
+    width: 70%;
     float: left;
 }
 
-#ultimos-subidos figure figcaption {
+#ultimos-subidos > figure figcaption > strong {
+    width: 30%;
     float: left;
+    margin-left: 5%
 }
 
-#ultimos-subidos figure figcaption p {
-    text-align: right;
+#ultimos-subidos > figure figcaption > p {
+    width: 30%;
+    float: left;
+    margin-left: 5%
 }
 
-
-/* Registro de usuarios */
 #registro-usuarios {
+    width: 35%;
     float: left;
+    margin-left: 5%;
+    background-color: rgb(254, 254, 254);
+    padding: 0.6em;
+    box-sizing: border-box;
 }
 
-
-/* Stock */
-.agrppal aside {
-    float: left;
+#registro-usuarios > strong {
+    margin-top: 1.6em;
+    display: block;
 }
 
+#registro-usuarios > p {
+    display: block;
+}
+
+.agrppal > aside {
+    width: 20%;
+    background-color: rgb(254, 254, 254);
+    padding: 0.6em;
+    box-sizing: border-box;
+}
+
+.agrppal > aside > figure {
+    margin-top: 1em;
+}
 
 /* Page Registro */
 .content form {
